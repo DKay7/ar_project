@@ -60,13 +60,28 @@
   <resource id="601e9e46-992-27c-c5f-76c" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="WhatsApp Image 2021-02-06 at 11.58.12 PM.jpeg">
    <filename value="WhatsApp Image 2021-02-06 at 11.58.12 PM.jpeg"/>
   </resource>
+  <resource id="6020224e-2ab-49e-c44-2e9" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="ev_pattern.png">
+   <filename value="ev_pattern.png"/>
+   <source value="C:\Program Files\EligoVision Toolbox 3.2.4 Trial\studio_data\resources\patterns\ev_pattern.png"/>
+  </resource>
+  <resource id="60204a1d-295-dd6-42a-e3a" kind="video" local="false" forceExport="false" rawAssetsExport="false" name="ev_logo_360p_vp9_4-2-0_opus.webm">
+   <filename value="ev_logo_360p_vp9_4-2-0_opus.webm"/>
+   <source value="C:\Program Files\EligoVision Toolbox 3.2.4 Trial\studio_data\resources\video\ev_logo_360p_vp9_4-2-0_opus.webm"/>
+  </resource>
+  <resource id="60204d19-cee-218-984-ca3" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="пленка.jpg">
+   <filename value="пленка.jpg"/>
+  </resource>
+  <resource id="60204fb7-ddd-2ca-fa5-113" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="циферблат.fbx">
+   <filename value="циферблат.fbx"/>
+   <optimizations/>
+  </resource>
   <resource id="OpenSans-Regular" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="OpenSans-Regular.ttf">
    <filename value="OpenSans-Regular.ttf"/>
    <source value="${STUDIO_RESOURCES_DIR}/fonts/OpenSans-Regular.ttf"/>
   </resource>
  </resources>
  <reactors>
-  <reactor id="601c4941-9f24-9e7f-519a" name="маркер_модель" type="node.marker">
+  <reactor id="601c4941-9f24-9e7f-519a" name="мк_часы" type="node.marker">
    <parameter name="visible" value="false"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="1">
@@ -88,20 +103,20 @@
     <field name="z" value="1"/>
    </parameter>
    <parameter name="markerType" value="dashdot"/>
-   <parameter name="pattern" value="601c49eb-59b-12d-6a7-d28"/>
+   <parameter name="pattern" value="6020224e-2ab-49e-c44-2e9"/>
    <parameter name="gridSize">
     <field name="x" value="4"/>
     <field name="y" value="4"/>
    </parameter>
    <parameter name="markerPhysSize" value="0.5"/>
-   <parameter name="enabled" value="false"/>
-   <parameter name="autoShow" value="false"/>
+   <parameter name="enabled" value="true"/>
+   <parameter name="autoShow" value="true"/>
    <parameter name="autoHide" value="false"/>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
-  <reactor id="601c4949-f452-cb7a-5b14" name="мышь " type="node.model">
-   <parameter name="visible" value="true"/>
+  <reactor id="601c4949-f452-cb7a-5b14" name="часы" type="node.model">
+   <parameter name="visible" value="false"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="0"/>
    <parameter name="trans">
@@ -111,7 +126,7 @@
    </parameter>
    <parameter name="rotate">
     <field name="x" value="0"/>
-    <field name="y" value="0"/>
+    <field name="y" value="-90"/>
     <field name="z" value="0"/>
    </parameter>
    <parameter name="scale">
@@ -119,16 +134,14 @@
     <field name="y" value="0.0131354"/>
     <field name="z" value="0.0131354"/>
    </parameter>
-   <parameter name="model" value="601c4a8b-23e-d66-782-7c7"/>
+   <parameter name="model" value="60204fb7-ddd-2ca-fa5-113"/>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
-  <reactor id="601c4950-6a24-ab38-c232" name="маркер_видео" type="node.marker">
+  <reactor id="601c4950-6a24-ab38-c232" name="мк_в_1" type="node.marker">
    <parameter name="visible" value="false"/>
    <parameter name="handleClick" value="true"/>
-   <parameter name="children" length="1">
-    <item index="1" value="601c4956-9d6e-ee66-eb6e"/>
-   </parameter>
+   <parameter name="children" length="0"/>
    <parameter name="trans">
     <field name="x" value="2.0037847912807"/>
     <field name="y" value="-0.0037522920851102"/>
@@ -145,7 +158,7 @@
     <field name="z" value="1"/>
    </parameter>
    <parameter name="markerType" value="dashdot"/>
-   <parameter name="pattern" value="601c49eb-59b-12d-6a7-d28"/>
+   <parameter name="pattern" value="601e853d-1a5-e8b-e66-6ca"/>
    <parameter name="gridSize">
     <field name="x" value="4"/>
     <field name="y" value="4"/>
@@ -155,42 +168,9 @@
    <parameter name="autoShow" value="false"/>
    <parameter name="autoHide" value="false"/>
    <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="false"/>
+   <field name="sectionItemCollapsed" value="true"/>
   </reactor>
-  <reactor id="601c4956-9d6e-ee66-eb6e" name="видео " type="rect.video">
-   <parameter name="visible" value="true"/>
-   <parameter name="handleClick" value="true"/>
-   <parameter name="children" length="0"/>
-   <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="center-center"/>
-   <parameter name="rect.size">
-    <field name="policy" value="simple"/>
-    <field name="x" value="50.000000%c"/>
-    <field name="y" value="keep-aspect"/>
-   </parameter>
-   <parameter name="rect.color">
-    <field name="red" value="0"/>
-    <field name="green" value="0"/>
-    <field name="blue" value="0"/>
-    <field name="alpha" value="0.75"/>
-   </parameter>
-   <parameter name="rect.shift">
-    <field name="x" value="0.000000px"/>
-    <field name="y" value="0.000000px"/>
-   </parameter>
-   <parameter name="rect.padding">
-    <field name="top" value="0.000000px"/>
-    <field name="right" value="0.000000px"/>
-    <field name="bottom" value="keep-aspect"/>
-    <field name="left" value="keep-aspect"/>
-   </parameter>
-   <parameter name="rect.scalePolicy" value="inherit"/>
-   <parameter name="image.resourceId" value="601c4a1e-132-477-96a-71c"/>
-   <parameter name="playMode" value="once"/>
-   <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="false"/>
-  </reactor>
-  <reactor id="601e8225-9a4e-1e18-ef17" name="маркер_безмаркерный" type="node.marker">
+  <reactor id="601e8225-9a4e-1e18-ef17" name="мк_безмаркерный" type="node.marker">
    <parameter name="visible" value="false"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="1">
@@ -222,7 +202,7 @@
    <parameter name="autoShow" value="false"/>
    <parameter name="autoHide" value="false"/>
    <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="false"/>
+   <field name="sectionItemCollapsed" value="true"/>
   </reactor>
   <reactor id="601e8229-e291-3c64-eae4" name="модель для безмаркерной " type="node.model">
    <parameter name="visible" value="true"/>
@@ -247,51 +227,16 @@
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
-  <reactor id="601e9e10-874f-b357-abf2" name="фото музея (фон меню)" type="rect.image">
+  <reactor id="601ea0a8-b242-d5d7-dfed" name="Вар-1-3" type="rect.text">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
-   <parameter name="children" length="2">
-    <item index="1" value="601ea0a8-b242-d5d7-dfed"/>
-    <item index="2" value="601eaa43-e369-dcdf-6ed7"/>
-   </parameter>
+   <parameter name="children" length="0"/>
    <parameter name="layer" value="0.01"/>
    <parameter name="rect.position" value="center-center"/>
    <parameter name="rect.size">
     <field name="policy" value="simple"/>
-    <field name="x" value="100.000000%"/>
-    <field name="y" value="100.000000%"/>
-   </parameter>
-   <parameter name="rect.color">
-    <field name="red" value="0"/>
-    <field name="green" value="0"/>
-    <field name="blue" value="0"/>
-    <field name="alpha" value="0.75"/>
-   </parameter>
-   <parameter name="rect.shift">
-    <field name="x" value="0.000000px"/>
-    <field name="y" value="0.000000px"/>
-   </parameter>
-   <parameter name="rect.padding">
-    <field name="top" value="0.000000px"/>
-    <field name="right" value="0.000000px"/>
-    <field name="bottom" value="keep-aspect"/>
-    <field name="left" value="keep-aspect"/>
-   </parameter>
-   <parameter name="rect.scalePolicy" value="inherit"/>
-   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
-   <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="true"/>
-  </reactor>
-  <reactor id="601ea0a8-b242-d5d7-dfed" name="здание " type="rect.text">
-   <parameter name="visible" value="true"/>
-   <parameter name="handleClick" value="true"/>
-   <parameter name="children" length="0"/>
-   <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="right-bottom"/>
-   <parameter name="rect.size">
-    <field name="policy" value="simple"/>
-    <field name="x" value="45.000000%v"/>
-    <field name="y" value="8.000000%v"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
    </parameter>
    <parameter name="rect.color">
     <field name="red" value="0"/>
@@ -300,8 +245,8 @@
     <field name="alpha" value="0.75"/>
    </parameter>
    <parameter name="rect.shift">
-    <field name="x" value="-2.000000%"/>
-    <field name="y" value="10.000000%"/>
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-24.000000%"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000%"/>
@@ -310,9 +255,9 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <parameter name="text.value" value="здание &#10;"/>
+   <parameter name="text.value" value="Это катушка для ниток"/>
    <parameter name="text.font_id" value="OpenSans-Regular"/>
-   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
    <parameter name="text.color">
     <field name="red" value="1"/>
     <field name="green" value="1"/>
@@ -325,16 +270,16 @@
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
-  <reactor id="601eaa43-e369-dcdf-6ed7" name="экспонаты " type="rect.text">
+  <reactor id="601eaa43-e369-dcdf-6ed7" name="ТВ-1" type="rect.text">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="0"/>
    <parameter name="layer" value="0.01"/>
-   <parameter name="rect.position" value="left-bottom"/>
+   <parameter name="rect.position" value="center-top"/>
    <parameter name="rect.size">
     <field name="policy" value="simple"/>
-    <field name="x" value="45.000000%v"/>
-    <field name="y" value="8.000000%v"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="14.000000%v"/>
    </parameter>
    <parameter name="rect.color">
     <field name="red" value="0"/>
@@ -343,8 +288,8 @@
     <field name="alpha" value="0.75"/>
    </parameter>
    <parameter name="rect.shift">
-    <field name="x" value="2.000000%"/>
-    <field name="y" value="10.000000%"/>
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-10.000000%"/>
    </parameter>
    <parameter name="rect.padding">
     <field name="top" value="0.000000%"/>
@@ -353,9 +298,9 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
-   <parameter name="text.value" value="экспонаты "/>
+   <parameter name="text.value" value="Для чего это нужно?"/>
    <parameter name="text.font_id" value="OpenSans-Regular"/>
-   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.font_size" value="8.000000%vw"/>
    <parameter name="text.color">
     <field name="red" value="1"/>
     <field name="green" value="1"/>
@@ -363,13 +308,13 @@
     <field name="alpha" value="1"/>
    </parameter>
    <parameter name="text.align" value="center-center"/>
-   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.auto_wrap" value="true"/>
    <parameter name="text.line_spacing" value="0.15"/>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
-  <reactor id="601eaffc-69af-a413-78f2" name="наведите на метку " type="rect.text">
-   <parameter name="visible" value="true"/>
+  <reactor id="601eaffc-69af-a413-78f2" name="наведите_на_метку " type="rect.text">
+   <parameter name="visible" value="false"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="0"/>
    <parameter name="layer" value="0.01"/>
@@ -411,7 +356,1561 @@
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
-  <reactor id="601ebdac-4179-a2f1-6975" name="Назад" type="rect.text">
+  <reactor id="601ebdac-4179-a2f1-6975" name="кн_назад" type="rect.text">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-bottom"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="45.000000%v"/>
+    <field name="y" value="8.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-2.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Назад"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="6020172e-7185-b62a-f915" name="мк_в_3" type="node.marker">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="trans">
+    <field name="x" value="2.0037847912807"/>
+    <field name="y" value="-0.0037522920851102"/>
+    <field name="z" value="0.001049132353874"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="601c49eb-59b-12d-6a7-d28"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.5"/>
+   <parameter name="enabled" value="false"/>
+   <parameter name="autoShow" value="false"/>
+   <parameter name="autoHide" value="false"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="6020172e-e4c2-ef32-57cc" name="видео_3" type="rect.video">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%v"/>
+    <field name="y" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601c4a1e-132-477-96a-71c"/>
+   <parameter name="playMode" value="once"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60201731-3779-1fa4-a2f3" name="мк_в_2" type="node.marker">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="trans">
+    <field name="x" value="2.0037847912807"/>
+    <field name="y" value="-0.0037522920851102"/>
+    <field name="z" value="0.001049132353874"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="60204d19-cee-218-984-ca3"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.5"/>
+   <parameter name="enabled" value="false"/>
+   <parameter name="autoShow" value="false"/>
+   <parameter name="autoHide" value="false"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60201731-43f3-dcc9-9874" name="видео_2" type="rect.video">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%vh"/>
+    <field name="y" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="60204a1d-295-dd6-42a-e3a"/>
+   <parameter name="playMode" value="loop"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202290-d52a-6bb3-49c8" name="видео_1" type="rect.video">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%v"/>
+    <field name="y" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601c4a1e-132-477-96a-71c"/>
+   <parameter name="playMode" value="loop"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202844-9634-dade-4b5a" name="ЭВ_1" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="4">
+    <item index="1" value="601eaa43-e369-dcdf-6ed7"/>
+    <item index="2" value="602028bb-f2ab-bbdc-b6f4"/>
+    <item index="3" value="602028c2-e929-6a82-edce"/>
+    <item index="4" value="601ea0a8-b242-d5d7-dfed"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="602028bb-f2ab-bbdc-b6f4" name="Вар-1-1" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Это батарейка"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="602028c2-e929-6a82-edce" name="Вар-1-2" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-12.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Это часть фотоаппарата"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202c9f-24cc-d5cf-d8be" name="ЭВ_3" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="4">
+    <item index="1" value="60202c9f-31ae-5275-5b28"/>
+    <item index="2" value="60202ca0-221d-4794-d3e1"/>
+    <item index="3" value="60202ca0-4c39-5c2f-eb6a"/>
+    <item index="4" value="60202ca0-d9e5-419a-123a"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60202c9f-31ae-5275-5b28" name="ТВ-3" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="14.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-10.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Для чего это нужно?"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="8.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202ca0-221d-4794-d3e1" name="Вар-3-1" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Вариант ответа 3-1"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202ca0-4c39-5c2f-eb6a" name="Вар-3-2" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-12.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Вариант ответа 3-2"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202ca0-d9e5-419a-123a" name="Вар-3-3" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-24.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Вариант ответа 3-3"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202ca8-97d2-43cf-cec7" name="ЭВ_2" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="4">
+    <item index="1" value="60202ca9-2f83-8ad1-59b4"/>
+    <item index="2" value="60202ca9-9bc5-ea87-e7ef"/>
+    <item index="3" value="60202ca9-c51b-5e7c-c4fc"/>
+    <item index="4" value="60202ca9-52d8-e3c1-54fa"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60202ca9-2f83-8ad1-59b4" name="ТВ-2" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="14.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-10.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Для чего это нужно?"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="8.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202ca9-52d8-e3c1-54fa" name="Вар-2-3" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-24.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Вариант ответа 2-3&#10;"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202ca9-9bc5-ea87-e7ef" name="Вар-2-1" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Вариант ответа 2-1"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202ca9-c51b-5e7c-c4fc" name="Вар-2-2" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-12.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Вариант ответа 2-2"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202d82-a41c-4661-4f49" name="ЗО-1" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="14.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-10.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Для чего это нужно?"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="8.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202d82-a56a-7bec-b692" name="ЭО_1" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="3">
+    <item index="1" value="60202d82-a41c-4661-4f49"/>
+    <item index="2" value="60202d83-bb65-b5dd-17ce"/>
+    <item index="3" value="602032c3-78a6-3142-fdf2"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60202d83-bb65-b5dd-17ce" name="ТО-1" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="25.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="На самом деле это пленка для фотоаппарата"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202f43-2936-9f16-5265" name="ТО-3" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="25.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Правильный_ответ-3"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202f43-2c83-37f6-f813" name="ЭО_3" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="3">
+    <item index="1" value="60202f43-99e6-9a19-f6e1"/>
+    <item index="2" value="60202f43-2936-9f16-5265"/>
+    <item index="3" value="60203356-3523-8666-a769"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60202f43-99e6-9a19-f6e1" name="ЗО-3" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="14.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-10.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Для чего это нужно?"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="8.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202f46-8bd3-4a95-99ed" name="ЭО_2" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="3">
+    <item index="1" value="60202f46-f566-773d-bc46"/>
+    <item index="2" value="60202f46-bfb9-d625-57b5"/>
+    <item index="3" value="60203347-a1fa-681f-8679"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60202f46-bfb9-d625-57b5" name="ТО-2" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="25.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="0.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Правильный_ответ-2"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60202f46-f566-773d-bc46" name="ЗО-2" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="14.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="-10.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Для чего это нужно?"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="8.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="6020303f-cb7b-c72b-fd3b" name="меню" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="2">
+    <item index="1" value="60203094-3ea3-bc77-285e"/>
+    <item index="2" value="6020309d-bc9e-d78e-bd35"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%"/>
+    <field name="y" value="100.000000%"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60203094-3ea3-bc77-285e" name="кн_дом" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-bottom"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="45.000000%v"/>
+    <field name="y" value="8.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-2.000000%"/>
+    <field name="y" value="10.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Дом"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="6020309d-bc9e-d78e-bd35" name="кн_экспонаты" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="left-bottom"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="45.000000%v"/>
+    <field name="y" value="8.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="2.000000%"/>
+    <field name="y" value="10.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Экспонаты"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="602032c3-78a6-3142-fdf2" name="кн_вд_1" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="12.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Просмотреть видео&#10;&#10;"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60203347-a1fa-681f-8679" name="кн_вд_2" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="12.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Просмотреть видео&#10;&#10;"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60203356-3523-8666-a769" name="кн_вд_3" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="85.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="12.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Просмотреть видео&#10;&#10;"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="7.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60203ad5-f26c-3acd-8cc4" name="ЭВидео-1" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="2">
+    <item index="1" value="60203bd1-6a1a-654a-729e"/>
+    <item index="2" value="60202290-d52a-6bb3-49c8"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%v"/>
+    <field name="y" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60203bbb-eb5e-4c34-aad8" name="ЭВидео-3" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="2">
+    <item index="1" value="6020172e-e4c2-ef32-57cc"/>
+    <item index="2" value="60203bd7-941d-d23c-e6ea"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%v"/>
+    <field name="y" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60203bbd-86a2-354b-6c8d" name="ЭВидео-2" type="rect.image">
+   <parameter name="visible" value="false"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="2">
+    <item index="1" value="60203bd4-34ff-a3a3-3327"/>
+    <item index="2" value="60201731-43f3-dcc9-9874"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="100.000000%v"/>
+    <field name="y" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60203bd1-6a1a-654a-729e" name="кн_назад_в_1" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-bottom"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="45.000000%v"/>
+    <field name="y" value="8.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-2.000000%v"/>
+    <field name="y" value="10.000000%v"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Назад"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60203bd4-34ff-a3a3-3327" name="кн_назад_в_2" type="rect.text">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-bottom"/>
+   <parameter name="rect.size">
+    <field name="policy" value="simple"/>
+    <field name="x" value="45.000000%v"/>
+    <field name="y" value="8.000000%v"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0.50196078431373"/>
+    <field name="blue" value="0.25098039215686"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-2.000000%"/>
+    <field name="y" value="10.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000%"/>
+    <field name="right" value="0.000000%"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Назад"/>
+   <parameter name="text.font_id" value="OpenSans-Regular"/>
+   <parameter name="text.font_size" value="4.000000%v"/>
+   <parameter name="text.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="false"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="60203bd7-941d-d23c-e6ea" name="кн_назад_в_3" type="rect.text">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="0"/>
@@ -457,10 +1956,19 @@
   <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
-   <parameter name="children" length="3">
+   <parameter name="children" length="12">
     <item index="1" value="601ebdac-4179-a2f1-6975"/>
     <item index="2" value="601eaffc-69af-a413-78f2"/>
-    <item index="3" value="601e9e10-874f-b357-abf2"/>
+    <item index="3" value="6020303f-cb7b-c72b-fd3b"/>
+    <item index="4" value="60202844-9634-dade-4b5a"/>
+    <item index="5" value="60202ca8-97d2-43cf-cec7"/>
+    <item index="6" value="60202c9f-24cc-d5cf-d8be"/>
+    <item index="7" value="60202d82-a56a-7bec-b692"/>
+    <item index="8" value="60202f46-8bd3-4a95-99ed"/>
+    <item index="9" value="60202f43-2c83-37f6-f813"/>
+    <item index="10" value="60203ad5-f26c-3acd-8cc4"/>
+    <item index="11" value="60203bbd-86a2-354b-6c8d"/>
+    <item index="12" value="60203bbb-eb5e-4c34-aad8"/>
    </parameter>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
@@ -472,15 +1980,19 @@
   <reactor id="scene" name="Scene" type="node.scene">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
-   <parameter name="children" length="4">
+   <parameter name="children" length="6">
     <item index="1" value="601e8225-9a4e-1e18-ef17"/>
     <item index="2" value="601c4941-9f24-9e7f-519a"/>
     <item index="3" value="601c4950-6a24-ab38-c232"/>
-    <item index="4" value="HeadUpDisplay"/>
+    <item index="4" value="60201731-3779-1fa4-a2f3"/>
+    <item index="5" value="6020172e-7185-b62a-f915"/>
+    <item index="6" value="HeadUpDisplay"/>
    </parameter>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
  </reactors>
- <exportParameters/>
+ <exportParameters last="exe">
+  <parameters format="exe" filename="C:/Users/DKay/Documents/ar_project/проект с меню.exe" appName="проект с меню - EVI Windows App" appId="проект.с.меню" arch="x64" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.2.4 Trial/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.2.4 Trial/studio_data//LaunchImage.png" category="" copyright="" runAfterExport="false" frameMode="window" supportedOrientations="1" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" samples="0" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" retinaSupport="true" appStoreDistribution="false" bundleName="проект с меню - EVI Windows App" cameraDescription="" photolibraryDescription="" deviceMotionDescription=""/>
+ </exportParameters>
 </Project>
