@@ -52,11 +52,6 @@
    <filename value="вд_1.webm"/>
    <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\videos\вд_1.webm"/>
   </resource>
-  <resource id="601c4a8b-23e-d66-782-7c7" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="м_мышь.fbx">
-   <filename value="м_мышь.fbx"/>
-   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\3d_obj\м_мышь.fbx"/>
-   <optimizations/>
-  </resource>
   <resource id="601e853d-1a5-e8b-e66-6ca" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="мк_безмаркерный.jpeg">
    <filename value="мк_безмаркерный.jpeg"/>
    <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\markers\мк_безмаркерный.jpeg"/>
@@ -100,10 +95,6 @@
    <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\3d_obj\м_солнечные_панели.fbx"/>
    <optimizations/>
   </resource>
-  <resource id="6020ed45-94b-c8b-f68-839" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="stones.png">
-   <filename value="stones.png"/>
-   <source value="C:\Program Files\EligoVision Toolbox 3.2.4 Trial\studio_data\resources\patterns\stones.png"/>
-  </resource>
   <resource id="OpenSans-Regular" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="OpenSans-Regular.ttf">
    <filename value="OpenSans-Regular.ttf"/>
    <source value="${STUDIO_RESOURCES_DIR}/fonts/OpenSans-Regular.ttf"/>
@@ -145,13 +136,13 @@
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
   <reactor id="601c4949-f452-cb7a-5b14" name="часы" type="node.model">
-   <parameter name="visible" value="false"/>
+   <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="0"/>
    <parameter name="trans">
     <field name="x" value="0"/>
     <field name="y" value="0"/>
-    <field name="z" value="0"/>
+    <field name="z" value="0.025539457207182"/>
    </parameter>
    <parameter name="rotate">
     <field name="x" value="0"/>
@@ -159,9 +150,9 @@
     <field name="z" value="0"/>
    </parameter>
    <parameter name="scale">
-    <field name="x" value="0.0131354"/>
-    <field name="y" value="0.0131354"/>
-    <field name="z" value="0.0131354"/>
+    <field name="x" value="0.0059523810218028"/>
+    <field name="y" value="0.0059523810218028"/>
+    <field name="z" value="0.0059523810218028"/>
    </parameter>
    <parameter name="model" value="602064d3-4d6-daf-d73-c77"/>
    <field name="exportEnabled" value="true"/>
@@ -200,7 +191,7 @@
    <field name="sectionItemCollapsed" value="true"/>
   </reactor>
   <reactor id="601e8225-9a4e-1e18-ef17" name="мк_безмаркерный" type="node.marker">
-   <parameter name="visible" value="true"/>
+   <parameter name="visible" value="false"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="1">
     <item index="1" value="601e8229-e291-3c64-eae4"/>
@@ -1983,7 +1974,7 @@
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
   <reactor id="6020689a-13c5-6dcb-3b3a" name="мк_стена" type="node.marker">
-   <parameter name="visible" value="false"/>
+   <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="1">
     <item index="1" value="60206e1e-a3b7-e112-6a1f"/>
@@ -2021,12 +2012,12 @@
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="0"/>
    <parameter name="trans">
-    <field name="x" value="0"/>
+    <field name="x" value="-0.0015692328401359"/>
     <field name="y" value="0"/>
-    <field name="z" value="0.017524183714557"/>
+    <field name="z" value="0.026334649733591"/>
    </parameter>
    <parameter name="rotate">
-    <field name="x" value="90"/>
+    <field name="x" value="0.6107717"/>
     <field name="y" value="0"/>
     <field name="z" value="0"/>
    </parameter>
