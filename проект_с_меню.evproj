@@ -100,6 +100,10 @@
    <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\3d_obj\м_солнечные_панели.fbx"/>
    <optimizations/>
   </resource>
+  <resource id="6020ed45-94b-c8b-f68-839" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="stones.png">
+   <filename value="stones.png"/>
+   <source value="C:\Program Files\EligoVision Toolbox 3.2.4 Trial\studio_data\resources\patterns\stones.png"/>
+  </resource>
   <resource id="OpenSans-Regular" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="OpenSans-Regular.ttf">
    <filename value="OpenSans-Regular.ttf"/>
    <source value="${STUDIO_RESOURCES_DIR}/fonts/OpenSans-Regular.ttf"/>
@@ -196,13 +200,13 @@
    <field name="sectionItemCollapsed" value="true"/>
   </reactor>
   <reactor id="601e8225-9a4e-1e18-ef17" name="мк_безмаркерный" type="node.marker">
-   <parameter name="visible" value="false"/>
+   <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="1">
     <item index="1" value="601e8229-e291-3c64-eae4"/>
    </parameter>
    <parameter name="trans">
-    <field name="x" value="1.1560917253106"/>
+    <field name="x" value="0.0069657376017798"/>
     <field name="y" value="0"/>
     <field name="z" value="0"/>
    </parameter>
@@ -235,18 +239,18 @@
    <parameter name="children" length="0"/>
    <parameter name="trans">
     <field name="x" value="0"/>
-    <field name="y" value="0"/>
-    <field name="z" value="0"/>
+    <field name="y" value="0.011831061779182"/>
+    <field name="z" value="0.055576862087751"/>
    </parameter>
    <parameter name="rotate">
     <field name="x" value="0"/>
-    <field name="y" value="0"/>
-    <field name="z" value="0"/>
+    <field name="y" value="1.0792238805081e-15"/>
+    <field name="z" value="3.6705962089687e-15"/>
    </parameter>
    <parameter name="scale">
-    <field name="x" value="0.013"/>
-    <field name="y" value="0.013"/>
-    <field name="z" value="0.013"/>
+    <field name="x" value="0.0059233736861665"/>
+    <field name="y" value="0.0059233736861665"/>
+    <field name="z" value="0.0059233736861665"/>
    </parameter>
    <parameter name="model" value="60207b0e-e2d-6f1-313-baa"/>
    <field name="exportEnabled" value="true"/>
@@ -529,7 +533,7 @@
    <parameter name="rect.position" value="center-center"/>
    <parameter name="rect.size">
     <field name="policy" value="simple"/>
-    <field name="x" value="100.000000%vh"/>
+    <field name="x" value="100.000000%v"/>
     <field name="y" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.color">
@@ -1979,7 +1983,7 @@
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
   <reactor id="6020689a-13c5-6dcb-3b3a" name="мк_стена" type="node.marker">
-   <parameter name="visible" value="true"/>
+   <parameter name="visible" value="false"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="1">
     <item index="1" value="60206e1e-a3b7-e112-6a1f"/>
@@ -2010,16 +2014,16 @@
    <parameter name="autoShow" value="false"/>
    <parameter name="autoHide" value="false"/>
    <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
   </reactor>
   <reactor id="60206e1e-a3b7-e112-6a1f" name="стена" type="node.model">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="0"/>
    <parameter name="trans">
-    <field name="x" value="0.093598212443615"/>
-    <field name="y" value="-0.00031958892941475"/>
-    <field name="z" value="0.0016681441338733"/>
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0.017524183714557"/>
    </parameter>
    <parameter name="rotate">
     <field name="x" value="90"/>
@@ -2027,9 +2031,9 @@
     <field name="z" value="0"/>
    </parameter>
    <parameter name="scale">
-    <field name="x" value="0.00024999999627471"/>
-    <field name="y" value="0.00024999999627471"/>
-    <field name="z" value="0.00024999999627471"/>
+    <field name="x" value="0.0025"/>
+    <field name="y" value="0.0025"/>
+    <field name="z" value="0.0025"/>
    </parameter>
    <parameter name="model" value="60206e31-2ce-947-545-6ed"/>
    <field name="exportEnabled" value="true"/>
@@ -2053,7 +2057,7 @@
     <item index="12" value="60203bbb-eb5e-4c34-aad8"/>
    </parameter>
    <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
   </reactor>
   <reactor id="System" name="System" type="system">
    <parameter name="albumName" value="evi_app"/>
