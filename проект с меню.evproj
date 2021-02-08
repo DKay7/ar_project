@@ -44,35 +44,60 @@
   </parameter>
  </presentationParams>
  <resources dir="resources_проект_с_меню">
-  <resource id="601c49eb-59b-12d-6a7-d28" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="флоппи.jpg">
-   <filename value="флоппи.jpg"/>
+  <resource id="601c49eb-59b-12d-6a7-d28" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="мк_флоппи.jpg">
+   <filename value="мк_флоппи.jpg"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\markers\мк_флоппи.jpg"/>
   </resource>
-  <resource id="601c4a1e-132-477-96a-71c" kind="video" local="true" forceExport="false" rawAssetsExport="false" name="20210102_134111.webm">
-   <filename value="20210102_134111.webm"/>
+  <resource id="601c4a1e-132-477-96a-71c" kind="video" local="false" forceExport="false" rawAssetsExport="false" name="вд_1.webm">
+   <filename value="вд_1.webm"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\videos\вд_1.webm"/>
   </resource>
-  <resource id="601c4a8b-23e-d66-782-7c7" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="toon mouse.fbx">
-   <filename value="toon mouse.fbx"/>
+  <resource id="601c4a8b-23e-d66-782-7c7" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="м_мышь.fbx">
+   <filename value="м_мышь.fbx"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\3d_obj\м_мышь.fbx"/>
    <optimizations/>
   </resource>
-  <resource id="601e853d-1a5-e8b-e66-6ca" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="коробка.png.jpeg">
-   <filename value="коробка.png.jpeg"/>
+  <resource id="601e853d-1a5-e8b-e66-6ca" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="мк_безмаркерный.jpeg">
+   <filename value="мк_безмаркерный.jpeg"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\markers\мк_безмаркерный.jpeg"/>
   </resource>
-  <resource id="601e9e46-992-27c-c5f-76c" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="WhatsApp Image 2021-02-06 at 11.58.12 PM.jpeg">
-   <filename value="WhatsApp Image 2021-02-06 at 11.58.12 PM.jpeg"/>
+  <resource id="601e9e46-992-27c-c5f-76c" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="фон.jpeg">
+   <filename value="фон.jpeg"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\photos\фон.jpeg"/>
   </resource>
   <resource id="6020224e-2ab-49e-c44-2e9" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="ev_pattern.png">
    <filename value="ev_pattern.png"/>
-   <source value="C:\Program Files\EligoVision Toolbox 3.2.4 Trial\studio_data\resources\patterns\ev_pattern.png"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\markers\ev_pattern.png"/>
   </resource>
-  <resource id="60204a1d-295-dd6-42a-e3a" kind="video" local="false" forceExport="false" rawAssetsExport="false" name="ev_logo_360p_vp9_4-2-0_opus.webm">
-   <filename value="ev_logo_360p_vp9_4-2-0_opus.webm"/>
-   <source value="C:\Program Files\EligoVision Toolbox 3.2.4 Trial\studio_data\resources\video\ev_logo_360p_vp9_4-2-0_opus.webm"/>
+  <resource id="60204a1d-295-dd6-42a-e3a" kind="video" local="false" forceExport="false" rawAssetsExport="false" name="вд_2_sample.webm">
+   <filename value="вд_2_sample.webm"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\videos\вд_2_sample.webm"/>
   </resource>
-  <resource id="60204d19-cee-218-984-ca3" kind="image" local="true" forceExport="false" rawAssetsExport="false" name="пленка.jpg">
-   <filename value="пленка.jpg"/>
+  <resource id="60204d19-cee-218-984-ca3" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="мк_пленка.jpg">
+   <filename value="мк_пленка.jpg"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\markers\мк_пленка.jpg"/>
   </resource>
-  <resource id="60204fb7-ddd-2ca-fa5-113" kind="model" local="true" forceExport="false" rawAssetsExport="false" name="циферблат.fbx">
-   <filename value="циферблат.fbx"/>
+  <resource id="602064d3-4d6-daf-d73-c77" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="м_часы.fbx">
+   <filename value="м_часы.fbx"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\3d_obj\м_часы.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource id="60206c9a-c84-e76-e7b-ac2" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="мк_перья.jpg">
+   <filename value="мк_перья.jpg"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\markers\мк_перья.jpg"/>
+  </resource>
+  <resource id="60206e31-2ce-947-545-6ed" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="м_стена.fbx">
+   <filename value="м_стена.fbx"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\3d_obj\м_стена.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource id="60207222-cbb-cbb-4ae-f5e" kind="image" local="false" forceExport="false" rawAssetsExport="false" name="мк_стена.jpg">
+   <filename value="мк_стена.jpg"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\markers\мк_стена.jpg"/>
+  </resource>
+  <resource id="60207b0e-e2d-6f1-313-baa" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="м_солнечные_панели.fbx">
+   <filename value="м_солнечные_панели.fbx"/>
+   <source value="C:\Users\DKay\Documents\ar_project\resources_проект_с_меню\3d_obj\м_солнечные_панели.fbx"/>
    <optimizations/>
   </resource>
   <resource id="OpenSans-Regular" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="OpenSans-Regular.ttf">
@@ -109,8 +134,8 @@
     <field name="y" value="4"/>
    </parameter>
    <parameter name="markerPhysSize" value="0.5"/>
-   <parameter name="enabled" value="true"/>
-   <parameter name="autoShow" value="true"/>
+   <parameter name="enabled" value="false"/>
+   <parameter name="autoShow" value="false"/>
    <parameter name="autoHide" value="false"/>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
@@ -134,7 +159,7 @@
     <field name="y" value="0.0131354"/>
     <field name="z" value="0.0131354"/>
    </parameter>
-   <parameter name="model" value="60204fb7-ddd-2ca-fa5-113"/>
+   <parameter name="model" value="602064d3-4d6-daf-d73-c77"/>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
@@ -158,7 +183,7 @@
     <field name="z" value="1"/>
    </parameter>
    <parameter name="markerType" value="dashdot"/>
-   <parameter name="pattern" value="601e853d-1a5-e8b-e66-6ca"/>
+   <parameter name="pattern" value="60204d19-cee-218-984-ca3"/>
    <parameter name="gridSize">
     <field name="x" value="4"/>
     <field name="y" value="4"/>
@@ -202,9 +227,9 @@
    <parameter name="autoShow" value="false"/>
    <parameter name="autoHide" value="false"/>
    <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
   </reactor>
-  <reactor id="601e8229-e291-3c64-eae4" name="модель для безмаркерной " type="node.model">
+  <reactor id="601e8229-e291-3c64-eae4" name="солнечные панели" type="node.model">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="0"/>
@@ -223,7 +248,7 @@
     <field name="y" value="0.013"/>
     <field name="z" value="0.013"/>
    </parameter>
-   <parameter name="model" value="601c4a8b-23e-d66-782-7c7"/>
+   <parameter name="model" value="60207b0e-e2d-6f1-313-baa"/>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
@@ -484,7 +509,7 @@
     <field name="z" value="1"/>
    </parameter>
    <parameter name="markerType" value="dashdot"/>
-   <parameter name="pattern" value="60204d19-cee-218-984-ca3"/>
+   <parameter name="pattern" value="60206c9a-c84-e76-e7b-ac2"/>
    <parameter name="gridSize">
     <field name="x" value="4"/>
     <field name="y" value="4"/>
@@ -1502,7 +1527,7 @@
    <parameter name="rect.scalePolicy" value="inherit"/>
    <parameter name="image.resourceId" value="601e9e46-992-27c-c5f-76c"/>
    <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="false"/>
+   <field name="sectionItemCollapsed" value="true"/>
   </reactor>
   <reactor id="60203094-3ea3-bc77-285e" name="кн_дом" type="rect.text">
    <parameter name="visible" value="true"/>
@@ -1953,6 +1978,63 @@
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
+  <reactor id="6020689a-13c5-6dcb-3b3a" name="мк_стена" type="node.marker">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="1">
+    <item index="1" value="60206e1e-a3b7-e112-6a1f"/>
+   </parameter>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1"/>
+    <field name="y" value="1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="markerType" value="dashdot"/>
+   <parameter name="pattern" value="60207222-cbb-cbb-4ae-f5e"/>
+   <parameter name="gridSize">
+    <field name="x" value="4"/>
+    <field name="y" value="4"/>
+   </parameter>
+   <parameter name="markerPhysSize" value="0.1"/>
+   <parameter name="enabled" value="false"/>
+   <parameter name="autoShow" value="false"/>
+   <parameter name="autoHide" value="false"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="true"/>
+  </reactor>
+  <reactor id="60206e1e-a3b7-e112-6a1f" name="стена" type="node.model">
+   <parameter name="visible" value="true"/>
+   <parameter name="handleClick" value="true"/>
+   <parameter name="children" length="0"/>
+   <parameter name="trans">
+    <field name="x" value="0.093598212443615"/>
+    <field name="y" value="-0.00031958892941475"/>
+    <field name="z" value="0.0016681441338733"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.00024999999627471"/>
+    <field name="y" value="0.00024999999627471"/>
+    <field name="z" value="0.00024999999627471"/>
+   </parameter>
+   <parameter name="model" value="60206e31-2ce-947-545-6ed"/>
+   <field name="exportEnabled" value="true"/>
+   <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
   <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
@@ -1971,7 +2053,7 @@
     <item index="12" value="60203bbb-eb5e-4c34-aad8"/>
    </parameter>
    <field name="exportEnabled" value="true"/>
-   <field name="sectionItemCollapsed" value="false"/>
+   <field name="sectionItemCollapsed" value="true"/>
   </reactor>
   <reactor id="System" name="System" type="system">
    <parameter name="albumName" value="evi_app"/>
@@ -1980,13 +2062,14 @@
   <reactor id="scene" name="Scene" type="node.scene">
    <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
-   <parameter name="children" length="6">
+   <parameter name="children" length="7">
     <item index="1" value="601e8225-9a4e-1e18-ef17"/>
-    <item index="2" value="601c4941-9f24-9e7f-519a"/>
-    <item index="3" value="601c4950-6a24-ab38-c232"/>
-    <item index="4" value="60201731-3779-1fa4-a2f3"/>
-    <item index="5" value="6020172e-7185-b62a-f915"/>
-    <item index="6" value="HeadUpDisplay"/>
+    <item index="2" value="6020689a-13c5-6dcb-3b3a"/>
+    <item index="3" value="601c4941-9f24-9e7f-519a"/>
+    <item index="4" value="601c4950-6a24-ab38-c232"/>
+    <item index="5" value="60201731-3779-1fa4-a2f3"/>
+    <item index="6" value="6020172e-7185-b62a-f915"/>
+    <item index="7" value="HeadUpDisplay"/>
    </parameter>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
