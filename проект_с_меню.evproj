@@ -3,7 +3,7 @@
  <presentationParams>
   <parameter name="presenceInterval" value="0"/>
   <parameter name="enableStatistics" value="true"/>
-  <parameter name="lostTimeout" value="0.5"/>
+  <parameter name="lostTimeout" value="0.1"/>
   <parameter name="detectors">
    <field name="dashdot">
     <field name="max_error" value="0.05"/>
@@ -2038,6 +2038,10 @@
    <parameter name="model" value="60206e31-2ce-947-545-6ed"/>
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
+  </reactor>
+  <reactor id="6020f3f8-eb64-3386-477c" name="counter01" type="counter">
+   <parameter name="initialValue" value="0"/>
+   <field name="exportEnabled" value="true"/>
   </reactor>
   <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud">
    <parameter name="visible" value="true"/>
