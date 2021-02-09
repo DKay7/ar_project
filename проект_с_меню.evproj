@@ -102,7 +102,7 @@
  </resources>
  <reactors>
   <reactor id="601c4941-9f24-9e7f-519a" name="мк_часы" type="node.marker">
-   <parameter name="visible" value="false"/>
+   <parameter name="visible" value="true"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="1">
     <item index="1" value="601c4949-f452-cb7a-5b14"/>
@@ -1974,7 +1974,7 @@
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
   <reactor id="6020689a-13c5-6dcb-3b3a" name="мк_стена" type="node.marker">
-   <parameter name="visible" value="true"/>
+   <parameter name="visible" value="false"/>
    <parameter name="handleClick" value="true"/>
    <parameter name="children" length="1">
     <item index="1" value="60206e1e-a3b7-e112-6a1f"/>
@@ -2030,7 +2030,7 @@
    <field name="exportEnabled" value="true"/>
    <field name="sectionItemCollapsed" value="false"/>
   </reactor>
-  <reactor id="6020f3f8-eb64-3386-477c" name="counter01" type="counter">
+  <reactor id="6020f3f8-eb64-3386-477c" name="сч_мк_дом" type="counter">
    <parameter name="initialValue" value="0"/>
    <field name="exportEnabled" value="true"/>
   </reactor>
